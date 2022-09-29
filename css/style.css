@@ -43,7 +43,7 @@ li{
     transition: all linear 0.3s;
 }
 .btn-primary:hover{
-    box-shadow: 0px 1px 10px hwb(168 9% 69% / 0.405);
+    box-shadow: 0px 1px 10px #174f4467;
     transform: translateY(-5px);
 }
 .btn{
@@ -219,7 +219,7 @@ li{
     display: flex;
     justify-content: space-between;
     gap: 30px;
-    margin-top: 400px;
+    margin-top: 430px;
 }
 .banner-img div{
     position: relative;
@@ -348,7 +348,7 @@ li{
 }
 .account-content{
     display: grid;
-    grid-template-columns:  repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns:  repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 50px;
 }
 .phone{
@@ -463,6 +463,9 @@ footer{
     justify-content: space-between;
     gap: 20px;
 }
+.footer-title{
+    width: 400px;
+}
 .footer-content{
     display: grid;
     grid-template-columns:  repeat(auto-fit, minmax(150px, 1fr));
@@ -490,7 +493,7 @@ footer{
 #topBtn{
     position: fixed;
     right: 30px;
-    bottom: 80px;
+    bottom: 30px;
     width: 50px;
     height: 50px;
     display: none;
@@ -509,6 +512,12 @@ footer{
     }
     .transection{
         flex-direction: column;
+    }
+    .transection-content p{
+        width: 100%;
+    }
+    .transection-content h1{
+        width: 100%;
     }
     .flex-content{
         flex-direction: column; 
@@ -613,8 +622,23 @@ footer{
     .third-card{
         bottom: -30px;
     }
+    .banner-img div img{
+        width: 100%;
+    }
   }
-/* @media screen and (max-width: 360px) {
+@media screen and (max-width: 400px) {
    
-    
-  } */
+    .banner-img{
+        gap: 10px;
+        margin-top: 100px;
+    }
+    .first-card{
+        bottom: -70px;
+    }
+    .second-card{
+        bottom: -50px;
+    }
+    .third-card{
+        bottom: -30px;
+    }
+  }
