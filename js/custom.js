@@ -1,6 +1,4 @@
 
-
-
 // Accordion js code
 const accItem = document.getElementsByClassName('accordionItem');
 const accTL = document.getElementsByClassName('accordion-title');
@@ -16,6 +14,8 @@ function toggleItem() {
         this.parentNode.className = 'accordionItem open';
     }
 }
+
+// Toggle Navbar
 
 const smNav = document.getElementById("smNav");
 const bars = document.getElementById("bar");
@@ -39,3 +39,20 @@ function menutoggle(){
     }
 }
 
+
+// Top To bottom 
+
+const header = document.getElementById("header");
+const topBtn = document.getElementById("topBtn");
+
+topBtn.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
+
+window.onscroll = () =>{
+    if(window.scrollY > 200){
+        header.style.position = "fixed";
+        topBtn.style.display = "block";
+    }else{
+        header.style.position = "static";
+        topBtn.style.display = "none";
+    }
+}
