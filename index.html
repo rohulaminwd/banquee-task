@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banquee</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <script src="https://kit.fontawesome.com/beb87a90d1.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -15,17 +20,71 @@
             <div class="logo">
                <h3 style="cursor: pointer;">banquee</h3> 
             </div>
-            <div>
+            <div class="nav-content">
                 <ul class="nav-item">
-                    <li>Featres</li>
-                    <li>Compare <img src="images/down.png" style="width: 12px;" alt=""></li>
+                    <li class="active">Featres</li>
+                    <li class="drop-down-menu">
+                        Compare 
+                        <img src="images/down.png" style="width: 12px;" alt="">
+                        <ul class="menu-content">
+                            <li>product</li>
+                            <li>card</li>
+                            <li>banks</li>
+                        </ul>
+                    </li>
                     <li>Support</li>
-                    <li>Blog <img src="images/down.png" style="width: 12px;" alt=""></li>
+                    <li class="drop-down-menu">
+                        Blog 
+                        <img src="images/down.png" style="width: 12px;" alt="">
+                        <ul class="menu-content">
+                            <li>product</li>
+                            <li>card</li>
+                            <li>banks</li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
-            <div>
-                <button style="font-size: 16px;" class="btn">Login</button>
+            <div class="nav-btn">
+                <button style="font-size: 16px; width: 100px;" class="btn">Login</button>
                 <button class="btn-primary">Open Account</button>
+            </div>
+            <div id="smNav" class="smNav navClose">
+                <div class="">
+                    <ul class="nav-item">
+                        <li class="active">Featres</li>
+                        <li class="drop-down-menu">
+                            Compare 
+                            <img src="images/down.png" style="width: 12px;" alt="">
+                            <ul class="menu-content">
+                                <li>product</li>
+                                <li>card</li>
+                                <li>banks</li>
+                            </ul>
+                        </li>
+                        <li>Support</li>
+                        <li class="drop-down-menu">
+                            Blog 
+                            <img src="images/down.png" style="width: 12px;" alt="">
+                            <ul class="menu-content">
+                                <li>product</li>
+                                <li>card</li>
+                                <li>banks</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sm-nav-btn">
+                    <button style="font-size: 16px; width: 100px;" class="btn">Login</button>
+                    <button style="width: 150px;" class="btn-primary">Open Account</button>
+                </div>
+            </div>
+            <div id="bars">
+                <div id="bar">
+                    <i class="fa fa-bars" style="font-size:24px"></i>
+                </div>
+                <div id="close" style="display: none;">
+                    <i class="fa fa-close" style="font-size:24px"></i>
+                </div>
             </div>
         </nav>
     </header>
@@ -35,7 +94,7 @@
   <section id="banner">
     <div class="banner-title">
         <p>Fetures</p>
-        <h1>All in one card</h1>
+        <h1 class="wow slideInLeft" data-wow-delay="0.5s">All in one card</h1>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque beatae hic</p>
         <div>
             <button class="btn-primary">Open Account</button>
@@ -44,7 +103,7 @@
     </div>
     <div class="banner-img">
         <div>
-            <img src="images/card-img (4).png" class="first-card" alt="card img">
+            <img src="images/card-img (4).png" class="first-card wow animate__bounceInUp" data-wow-delay="0.5s" alt="card img">
         </div>
         <div>
             <img src="images/card-img (3).png" class="second-card" alt="card img">
@@ -56,7 +115,7 @@
             <img src="images/card-img (3).png" class="second-card" alt="card img">
         </div>
         <div>
-            <img src="images/card-img (4).png" class="first-card" alt="card img">
+            <img src="images/card-img (4).png" class="first-card wow animate__bounceInUp" data-wow-delay="0.5s" alt="card img">
         </div>
     </div>
   </section>
@@ -307,10 +366,12 @@
         <p>@ Made by <span style="color: #5BB5A2;">Powel goal</span> - Powered by <span style="color: #5BB5A2;">Webflow</span></p>
         <p>Impresume  Detinschutz</p>
     </div>
-</footer>
+  </footer>
   <!-- FOOTER SECTION END -->
 
-    <script src="js/jquery-2.2.4.min.js"></script>
+  <!-- SCRIPT -->
     <script src="js/custom.js"></script>
+    <script src="js/wow.min.js"></script>
+
 </body>
 </html>
