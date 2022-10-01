@@ -40,11 +40,10 @@ li{
     font-weight: bold;
     font-size: 16px;
     cursor: pointer;
-    transition: all linear 0.3s;
+    transition: all linear 0.2s;
 }
 .btn-primary:hover{
-    box-shadow: 0px 1px 10px #174f4467;
-    transform: translateY(-5px);
+    outline: 4px solid #7aeed5;
 }
 .btn{
     border: 0;
@@ -55,12 +54,12 @@ li{
     background-color: transparent;
     font-weight: bold;
     cursor: pointer;
-    transition: all linear 0.3s;
+    transition: all linear 0.1s;
 }
 
 .btn:hover{
-    background-color: #E8F2EE;
-    letter-spacing: 1px;
+    /* background-color: #E8F2EE; */
+    outline: 2px solid #5BB5A2;
 }
 
 .flex-content{
@@ -428,6 +427,34 @@ li{
 }
 
 
+.bank-card-item{
+    background-color: #F8F8F8;
+    width: 100%; 
+    position: relative;
+    padding: 60px 60px 0 60px;
+    text-align: center;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.bank-phone-2{
+    position: absolute;
+    top: 300px; left: 50%;
+    transform: translate(-50%);
+
+}
+.bank-card-title h3{
+    font-size: 40px;
+}
+.bank-card-title p{
+    font-size: 20px;
+    color: rgba(26, 25, 30, 0.5);
+    line-height: 30px;
+    margin: 16px 0;
+    font-weight: 500;
+
+}
+
+
 /* band section end */
 #accounts{
     max-width: 1270px;
@@ -463,6 +490,12 @@ li{
     max-width: 1270px;
     padding: 0 20px;
     margin: 100px auto;
+}
+.contact-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 .account-content{
     display: grid;
@@ -621,6 +654,11 @@ footer{
     line-height: 58px;
     cursor: pointer;
     color: #5BB5A2;
+    z-index: 998;
+    background-color: #fff;
+}
+.fa-angle-double-up{
+    z-index: 999;
 }
 
 /* Responsive Design */
@@ -637,7 +675,7 @@ footer{
     .transection-content h1{
         width: 100%;
     }
-    .flex-content{
+    .contact-container{
         flex-direction: column; 
     }
     .footer-item{
@@ -682,6 +720,9 @@ footer{
         gap: 16px;
         margin-top: 250px;
     }
+    .bank-card-item{
+        padding: 40px 40px 0 40px;
+    }
   }
 @media screen and (max-width: 1170px) {
     .first-card{
@@ -708,9 +749,6 @@ footer{
     } 
     .banner-title h1{
         font-size: 40px;
-    }
-    .phone-card img{
-        width: 100%;
     }
     .banner-title p{
         width: 100%;
@@ -743,6 +781,9 @@ footer{
     .banner-img div img{
         width: 100%;
     }
+    .bank-card-item{
+        padding: 30px 60px 0 30px;
+    }
   }
 @media screen and (max-width: 400px) {
    
@@ -758,5 +799,12 @@ footer{
     }
     .third-card{
         bottom: -30px;
+    }
+    .phone-1{
+        width: 100%;
+        padding: 20px;
+    }
+    .bank-card-item{
+        padding: 20px 60px 0 20px;
     }
   }
